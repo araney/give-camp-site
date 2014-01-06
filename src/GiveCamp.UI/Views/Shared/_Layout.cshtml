@@ -8,6 +8,12 @@
 	<link rel="stylesheet" href="@Url.Content("~/Stylesheets/site.less")"/>
 </head>
 <body>
-	@RenderBody()
+	<div class="body-wrapper">
+		@RenderBody()
+		<div class="footer-cushion"></div>
+	</div>
+	<footer></footer>
+	
+	<script type="text/javascript" src="@Url.Content("~/Scripts/jquery-2.0.3.min.js")"></script>
 </body>
 </html>
