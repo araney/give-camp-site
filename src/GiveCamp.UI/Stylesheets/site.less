@@ -1,0 +1,56 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Exo+2:400,200);
+
+@body-background-color: #A8BBD1;
+@body-foreground-color: #000000;
+
+body {
+    background-color: @body-background-color;
+    color: @body-foreground-color;
+}
+
+.standard-text() {
+    font-family: 'Exo 2', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    .standard-text();
+}
+
+h2 {
+    .standard-text();
+
+    span {
+        margin: 0 0.5em;
+    }
+}
+
+.main-container {
+    text-align: center;
+    background-image: url("/Images/give-camp-bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-bottom: 335px;
+    padding-top: 20px;
+}
+
+.logo {
+    padding: 5px;
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 1px solid darken(@body-background-color, 20%);
+}
+
+.register-button {
+    margin-top: 20px;
+}
+
+.descriptions {
+    text-align: justify;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid shade(@body-background-color, 25%);
+
+    background-color: tint(@body-background-color, 50%);
+}
