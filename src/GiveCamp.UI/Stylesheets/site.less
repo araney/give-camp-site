@@ -3,14 +3,26 @@
 
 @body-background-color: #A8BBD1;
 @body-foreground-color: #000000;
+@custom-container-border-color: shade(@body-background-color, 25%);
+@custom-container-background-color: tint(@body-background-color, 50%);
+@custom-container-border: 1px solid @custom-container-border-color;
+@custom-container-border-radius: 5px;
+
+.standard-text() {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.custom-container() {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border: @custom-container-border;
+    background-color: @custom-container-background-color;
+}
 
 body {
     background-color: @body-background-color;
     color: @body-foreground-color;
-}
-
-.standard-text() {
-    font-family: 'Exo 2', sans-serif;
 }
 
 h1 {
@@ -44,11 +56,19 @@ h2 {
 
 .descriptions {
     text-align: justify;
-    margin-top: 20px;
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid shade(@body-background-color, 25%);
-    background-color: tint(@body-background-color, 50%);
+    .custom-container();
+}
+
+.sponsors {
+    text-align: left;
+    .custom-container();
+    
+    .headspring-logo {
+        background-color: #FFF;
+        padding: @custom-container-border-radius * 2;
+        border: @custom-container-border;
+        border-radius: @custom-container-border-radius;
+    }
 }
 
 footer {

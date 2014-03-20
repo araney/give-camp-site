@@ -118,3 +118,4 @@ src/Land.UI/Uploads/
 
 *.orig
 [Dd]eploy
+*.suo
