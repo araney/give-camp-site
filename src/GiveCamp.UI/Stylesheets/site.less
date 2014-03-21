@@ -38,6 +38,29 @@ h2 {
     }
 }
 
+blockquote {
+    border-left-color: @custom-container-border-color;
+    border-left-width: 1px;
+}
+
+footer {
+    background-image: url("/Images/give-camp-bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.panel {
+    margin-top: 20px;
+    text-align: left;
+    border: @custom-container-border;
+    background-color: @custom-container-background-color;
+
+    .panel-heading {
+        background-color: @custom-container-background-color;
+        border-bottom-color: @custom-container-border-color;
+    }
+}
+
 .main-container {
     text-align: center;
     padding-top: 20px;
@@ -54,25 +77,9 @@ h2 {
     margin-top: 20px;
 }
 
-.descriptions {
-    text-align: justify;
-    .custom-container();
-}
-
-.sponsors {
-    text-align: left;
-    .custom-container();
-    
-    .headspring-logo {
-        background-color: #FFF;
-        padding: @custom-container-border-radius * 2;
-        border: @custom-container-border;
-        border-radius: @custom-container-border-radius;
-    }
-}
-
-footer {
-    background-image: url("/Images/give-camp-bg.png");
-    background-repeat: no-repeat;
-    background-position: bottom center;
+.headspring-logo {
+    background-color: #FFF;
+    padding: @custom-container-border-radius * 2;
+    border: @custom-container-border;
+    border-radius: @custom-container-border-radius;
 }
