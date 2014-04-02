@@ -8,90 +8,90 @@
 }
 
 <div class="main-container">
-	<div class="container">
-		<img class="logo" src="@Url.Content("~/Images/give-camp-houston-logo.png")"/>
-		<h1>@ViewBag.Title</h1>
-		<h2><span>April 4 - 6, 2014</span>&bull;<span>Houston, Texas</span></h2>
+    <div class="container">
+        <img class="logo" src="@Url.Content("~/Images/give-camp-houston-logo.png")"/>
+        <h1>@ViewBag.Title</h1>
+        <h2><span>April 4 - 6, 2014</span>&bull;<span>Houston, Texas</span></h2>
 		
-	    <div class="register-button">
-	        <a href="https://www.eventbrite.com/e/2014-houston-givecamp-registration-10032769283?ref=ebtnebregn" target="_blank"><img src="http://www.eventbrite.com/custombutton?eid=10032769283" alt="Eventbrite - 2014 Houston GiveCamp" /></a>
-	    </div>
+        <div class="register-button">
+            <a href="https://www.eventbrite.com/e/2014-houston-givecamp-registration-10032769283?ref=ebtnebregn" target="_blank"><img src="http://www.eventbrite.com/custombutton?eid=10032769283" alt="Eventbrite - 2014 Houston GiveCamp" /></a>
+        </div>
         
         <div class="row">
-	        <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-	            @using (Html.BeginPanel("Updates"))
-	            {
-	                <div class="row">
-	                    <div class="col-sm-3">
-	                        <ul class="list-unstyled">
-	                            <li><b>Meet and Greet</b></li>
-	                            <li>Tuesday, March 25<sup>th</sup></li>
-	                            <li>6:00pm - 8:00pm</li>
-	                            <li>David Weekley Homes</li>
-	                            <li>1111 N Post Oak</li>
-	                            <li>Houston, TX 77055</li>
-	                            <li>
-	                                <i class="glyphicon glyphicon-map-marker"></i>
-	                                <a href="@mapLink"><b>Map</b></a>
-	                            </li>
-	                        </ul>
-	                    </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                @using (Html.BeginPanel("Updates"))
+                {
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <ul class="list-unstyled">
+                                <li><b>Meet and Greet</b></li>
+                                <li>Tuesday, March 25<sup>th</sup></li>
+                                <li>6:00pm - 8:00pm</li>
+                                <li>David Weekley Homes</li>
+                                <li>1111 N Post Oak</li>
+                                <li>Houston, TX 77055</li>
+                                <li>
+                                    <i class="glyphicon glyphicon-map-marker"></i>
+                                    <a href="@mapLink"><b>Map</b></a>
+                                </li>
+                            </ul>
+                        </div>
 
-	                    <div class="col-sm-9">
-	                        <blockquote>All registered developers please attend. You will get to meet the charities and get teamed up with other developers for GiveCamp. We will provide snacks for everyone.</blockquote>
-	                    </div>
-	                </div>
-	            }
-	        </div>
-	    </div>
+                        <div class="col-sm-9">
+                            <blockquote>All registered developers please attend. You will get to meet the charities and get teamed up with other developers for GiveCamp. We will provide snacks for everyone.</blockquote>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
         
-	    <div class="row">
-	        <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-	            @using (Html.BeginPanel())
-	            {
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                @using (Html.BeginPanel())
+                {
 
-	                <div class="row">
-	                    <div class="col-xs-12 col-sm-6">
-	                        <p><strong>GiveCamp</strong> is a three day event where technology professionals from designers, developers and database administrators to marketers and web strategists donate their time to provide solutions for non-profit organizations.</p>
-	                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <p><strong>GiveCamp</strong> is a three day event where technology professionals from designers, developers and database administrators to marketers and web strategists donate their time to provide solutions for non-profit organizations.</p>
+                        </div>
 
-	                    <div class="col-xs-12 col-sm-6">
-	                        <p><strong>GiveCamp Houston</strong> is being hosted this year by <em>David Weekley Homes</em>. We are hoping for a large turnout and are looking forward to seeing you all there. Sign up soon and come join us!</p>
-	                    </div>
-	                </div>
-	            }
-	        </div>
-	    </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <p><strong>GiveCamp Houston</strong> is being hosted this year by <em>David Weekley Homes</em>. We are hoping for a large turnout and are looking forward to seeing you all there. Sign up soon and come join us!</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
 
-	    <div class="row sponsors">
-	        <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-	            @using (Html.BeginPanel())
-	            {
-	                <div class="row">
-	                    <div class="col-sm-5">
-	                        <a href="@headspringLink">
-	                            <img class="headspring-logo media-object" src="@Url.Content("~/Images/headspring-logo.gif")" alt="Headspring Logo" />
-	                        </a>
-	                    </div>
-	                    <div class="col-sm-7">
-	                        <h4>Headspring</h4>
-	                        <p>GiveCamp Houston is being fully sponsored by <b><a href="@headspringLink">Headspring</a></b></p>
-	                    </div>
-	                </div>
+        <div class="row sponsors">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                @using (Html.BeginPanel())
+                {
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <a href="@headspringLink">
+                                <img class="headspring-logo media-object" src="@Url.Content("~/Images/headspring-logo.gif")" alt="Headspring Logo" />
+                            </a>
+                        </div>
+                        <div class="col-sm-7">
+                            <h4>Headspring</h4>
+                            <p>GiveCamp Houston is being fully sponsored by <b><a href="@headspringLink">Headspring</a></b></p>
+                        </div>
+                    </div>
                     
-	                <div class="row oreilly-plug">
-	                    <div class="col-sm-5">
-	                        <a href="@oreillyLink">
-	                            <img class="oreilly-logo media-object" src="@Url.Content("~/Images/oreilly-logo.jpg")" alt="O'Reilly Logo" />
-	                        </a>
-	                    </div>
-	                    <div class="col-sm-7">
-	                        <h4>O'Reilly</h4>
+                    <div class="row oreilly-plug">
+                        <div class="col-sm-5">
+                            <a href="@oreillyLink">
+                                <img class="oreilly-logo media-object" src="@Url.Content("~/Images/oreilly-logo.jpg")" alt="O'Reilly Logo" />
+                            </a>
+                        </div>
+                        <div class="col-sm-7">
+                            <h4>O'Reilly</h4>
                             <p>Some door prizes sponsored by <b><a href="@oreillyLink">O'Reilly</a></b></p>
-	                    </div>
-	                </div>
-	            }
-	        </div>
-	    </div>
-	</div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
 </div>
